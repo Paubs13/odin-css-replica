@@ -80,16 +80,17 @@ section.first {
     flex-direction: row;
     align-items: center;
     gap: 150px;
+    padding-bottom: 75px;
 }
 
-.right{
+section.first > .right {
     display: flex;
     flex-direction: column;
     flex: 0 1 auto;
     width: 50%;
 }
 
-h1{
+section.first > .right > h1{
     display: flex;
     margin: 0;
     flex: 0 1 auto;
@@ -99,13 +100,13 @@ h1{
     font-weight: bold;
 }
 
-p.first{
+section.first > .right > p {
     display: flex;
     color: #919191;
     font-size: 20px;
 }
 
-button.first{
+section.first > .right > button {
     background-color: #3882F6;
     border: none;
     color: white;
@@ -119,12 +120,77 @@ button.first{
     border-radius: 15px;
 }
 
-img.first{
+section.first > .left > img{
     height: 250px;
     width: 550px;
 }
 
-img.second{
+section.second{
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-bottom: 100px;
+}
+
+section.second > .title.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section.second > .title.container > h2 {
+    color: #000000;
+    font: "Roboto Bold";
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0 0 1em 0;
+}
+
+section.second > .boxes.container {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.second > .boxes.container > .box {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.second > .boxes.container > .box > .sub-box {
+    display: flex;
     height: 200px;
     width: 200px;
+    flex: 0 1 auto;
+    flex-direction: row;
+    border-width: 4px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 5px;
+} 
+
+section.second > .boxes.container > .box > .sub-box > img {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex: 0 1 auto;
+}
+
+section.second > .boxes.container > .box > p {
+    width: 200px;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    color: #181717;
+    text-align: center;
+}
+
+section.third {
+    background-color: #b8b8b8;
+    display:flex;
+    flex-direction: column;
 }
