@@ -216,4 +216,48 @@ section.third > .quote.box > .quote.credit {
 }
 
 section.fourth {
+    flex-direction: column;
+    flex: 0 1 auto;
+}
+
+section.fourth > .container {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    align-self: stretch;
+    background-color: #3882F6;
+    border-width: 4px;
+    border-color: #3882F6;
+    border-radius: 8px;
+    padding: 2em 12em 2em 12em;
+    margin: 5em 0 5em 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.fourth > .container > .action.button-box > button {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #eee;
+    border-style: solid;
+    color: #eee;
+    padding: 10px 32px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font: "Roboto Bold";
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+footer {
+    padding: 1em 0 1em 0;
+}
+
+footer > p {
+    text-align: center;
 }
