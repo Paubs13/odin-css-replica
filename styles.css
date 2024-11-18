@@ -150,7 +150,7 @@ section.second > .boxes.container {
     flex-direction: row;
     flex: 0 1 auto;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 section.second > .boxes.container > .box {
@@ -191,6 +191,29 @@ section.second > .boxes.container > .box > p {
 
 section.third {
     background-color: #b8b8b8;
-    display:flex;
     flex-direction: column;
+    padding: 10em 22em 10em 22em;
+}
+
+section.third > .quote.box {
+    align-self: center;
+}
+
+section.third > .quote.box > .quote {
+    color: #2c2c2c;
+    font: "Roboto Italic";
+    font-style: italic;
+    font-size: 30px;
+    text-align: left;
+}
+
+section.third > .quote.box > .quote.credit {
+    color: #000000;
+    font: "Roboto";
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+}
+
+section.fourth {
 }
